@@ -7,34 +7,30 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <title>Resume</title>
-    <header>
-      <figure>
-        <img className="avatar" alt="userPhoto" />
-        <span>Hello,</span>
-        <figcaption>MY NAME IS AND THIS IS MY RESUME/CV</figcaption>
-      </figure>
-    </header>
-    <main>
-      <div className="about-me">
-        <h2>About Me</h2>
-        <p className="describe"></p>
-      </div>
-      <div className="edcation">
-        <h2>Education</h2>
-        <ul className="education-experience">
-          <li>
-            <span className="year"></span>
-            <div className="describe-content">
-              <span className="title"></span>
-              <p className="describe"></p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </main>
   </head>
+  <header>
+    <figure>
+      <img className="avatar" alt="userPhoto" />
+      <span>Hello,</span>
+      <figcaption id="self-introduce">
+        MY NAME IS AND THIS IS MY RESUME/CV
+      </figcaption>
+    </figure>
+  </header>
+  <main>
+    <div className="about-me">
+      <h2>About Me</h2>
+      <p className="describe" id="about-me__describe"></p>
+    </div>
+    <div className="edcation">
+      <h2>Education</h2>
+      <ul className="education-experience"></ul>
+    </div>
+  </main>
+
   <body>
-    <script src="src/app.js"></script>
+    <script src="src/javascript/app.js"></script>
   </body>
 </html>
