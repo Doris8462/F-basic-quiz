@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const url = "http://localhost:8080/users/";
 
-const introduce = (name, age) =>
+const introduce = (name = " ", age = " ") =>
   `MY NAME IS ${name} ${age}YO AND THIS IS MY RESUME`;
 
 const createLi = (year, title, description) =>
