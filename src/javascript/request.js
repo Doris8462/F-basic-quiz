@@ -7,10 +7,10 @@ const introduce = (name, age) =>
 const createLi = (year, title, description) =>
   `
         <li>
-        <span className="year">${year}</span>
-        <div className="describe-content">
-          <span className="title">${title}</span>
-          <p className="describe">${description}</p>
+        <span class="year">${year}</span>
+        <div class="describe-content">
+          <span class="title">${title}</span>
+          <p class="describe">${description}</p>
         </div>
       </li>
       `;

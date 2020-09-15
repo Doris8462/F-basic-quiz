@@ -1,3 +1,68 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+.content {
+  width: 80%;
+  background-color: $white;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  margin: 8% auto;
+}
+header {
+  font-weight: bold;
+}
+figure {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.avatar {
+  border-radius: 50%;
+  width: $image-size;
+  margin: -60px auto 15px;
+}
+.hello {
+  font-size: 2rem;
+  margin-top: -10px;
+}
+#self-introduce {
+  font-size: 1.5rem;
+}
+hr {
+  width: 95%;
+  margin: 20px auto;
+  background-color: $body-bg;
+  border: none;
+  height: 2px;
+  opacity: 0.5;
+}
+main {
+  padding: 20px;
+}
+.about-me,
+.education {
+  color: $primary-color;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#about-me__describe {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.education-experience li {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+.describe-content {
+  width: 88%;
+  background-color: $gray-light;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+.title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
