@@ -1,8 +1,17 @@
 import * as request from "../javascript/request";
 
-describe("introduce", () => {
-  test("should return introduce when given name and age", () => {
-    const result = request.introduce("Jack", 20);
-    expect(result).toEqual("MY NAME IS Jack 20YO AND THIS IS MY RESUME");
+jest.mock("../javascript/request.js");
+describe("request", () => {
+  test("should get user info when getUser called", async () => {
+    request.getUser.mockImplementation(() => {});
+    request.getUser(1);
+    expect(request.getUser).toHaveBeenCalled();
+    expect(request.getUser).toHaveBeenCalledTimes(1);
+  });
+  test("should get Educations info when getEducation called", async () => {
+    request.getEducation.mockImplementation(() => {});
+    request.getEducation(1);
+    expect(request.getEducation).toHaveBeenCalled();
+    expect(request.getEducation).toHaveBeenCalledTimes(1);
   });
 });
