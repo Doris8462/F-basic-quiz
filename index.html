@@ -1,13 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hans">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Resume</title>
-</head>
-<body>
-  <script src="src/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Resume</title>
+    <header>
+      <figure>
+        <img className="avatar" alt="userPhoto" />
+        <span>Hello,</span>
+        <figcaption>MY NAME IS AND THIS IS MY RESUME/CV</figcaption>
+      </figure>
+    </header>
+    <main>
+      <div className="about-me">
+        <h2>About Me</h2>
+        <p className="describe"></p>
+      </div>
+      <div className="edcation">
+        <h2>Education</h2>
+        <ul className="education-experience">
+          <li>
+            <span className="year"></span>
+            <div className="describe-content">
+              <span className="title"></span>
+              <p className="describe"></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </head>
+  <body>
+    <script src="src/app.js"></script>
+  </body>
 </html>
