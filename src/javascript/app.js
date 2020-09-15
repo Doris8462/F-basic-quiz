@@ -2,5 +2,7 @@ import "../style/index.scss";
 
 import { getUser, getEducation } from "./request";
 
-getUser("1");
-getEducation("1");
+const pathnames = window.location.pathname;
+const index = pathnames.split("/")[2];
+getUser(index);
+getEducation(index);
