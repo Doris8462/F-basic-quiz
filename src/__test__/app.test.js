@@ -1,3 +1,12 @@
-test("add 1+1 is 2", () => {
-  expect(2).toBe(2);
+import "../javascript/app";
+import { getUser, getEducation } from "../javascript/request";
+
+jest.mock("../javascript/request");
+describe("app", () => {
+  test("should called getUser get Education when enter page", () => {
+    expect(getUser).toHaveBeenCalled();
+    expect(getUser).toHaveBeenCalledTimes(1);
+    expect(getEducation).toHaveBeenCalled();
+    expect(getEducation).toHaveBeenCalledTimes(1);
+  });
 });
