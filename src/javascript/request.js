@@ -52,4 +52,4 @@ const getEducation = async (userId) => {
     .catch((err) => console.log(err));
 };
 
-export { getUser, getEducation };
+export { introduce, getUser, getEducation };
