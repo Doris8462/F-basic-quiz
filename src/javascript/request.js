@@ -19,7 +19,7 @@ const addLi = (year, title, description) => {
   $("ul").append(createLi(year, title, description));
 };
 
-const getUser = async (userId) => {
+const getUser = (userId) => {
   return fetch(`${url}${userId}`, {
     method: "GET",
     headers: {
@@ -35,7 +35,7 @@ const getUser = async (userId) => {
     .catch((err) => console.log(err));
 };
 
-const getEducation = async (userId) => {
+const getEducation = (userId) => {
   return fetch(`${url}${userId}/educations`, {
     method: "GET",
     headers: {

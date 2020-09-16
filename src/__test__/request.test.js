@@ -1,20 +1,17 @@
-// eslint-disable-next-line no-unused-vars
-import * as request from "../javascript/request";
-
 jest.mock("../javascript/request.js");
+const mockGetUser = jest.fn(() => Promise.resolve({ data: {} }));
+const mockGetEducation = jest.fn(() => Promise.resolve({ data: {} }));
 describe("request", () => {
-  const getUser = jest.fn().mockImplementation(() => true);
-  const getEducation = jest.fn().mockImplementation(() => true);
   test("should get user info when getUser called", async () => {
-    getUser.mockImplementation(() => {});
-    getUser(1);
-    expect(getUser).toHaveBeenCalled();
-    expect(getUser).toHaveBeenCalledTimes(1);
+    const result = mockGetUser();
+    expect(mockGetUser).toHaveBeenCalled();
+    expect(mockGetUser).toHaveBeenCalledTimes(1);
+    await expect(result).resolves.toEqual({ data: {} });
   });
   test("should get Educations info when getEducation called", async () => {
-    getEducation.mockImplementation(() => {});
-    getEducation(1);
-    expect(getEducation).toHaveBeenCalled();
-    expect(getEducation).toHaveBeenCalledTimes(1);
+    const result = mockGetEducation();
+    expect(mockGetEducation).toHaveBeenCalled();
+    expect(mockGetEducation).toHaveBeenCalledTimes(1);
+    await expect(result).resolves.toEqual({ data: {} });
   });
 });
