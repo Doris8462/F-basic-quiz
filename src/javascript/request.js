@@ -45,8 +45,8 @@ const getEducation = async (userId) => {
     .then((response) => response.json())
     .then((data) => {
       data.sort((a, b) => a.year - b.year);
-      data.forEach((element) =>
-        addLi(element.year, element.title, element.description)
+      data.map((education) =>
+        addLi(education.year, education.title, education.description)
       );
     })
     .catch((err) => console.log(err));
