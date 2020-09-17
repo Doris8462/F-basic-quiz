@@ -13,6 +13,7 @@
   </head>
   <div class="content">
     <header>
+      <!--      // TODO feedback: 不建议使用figure，下面的内容不是对图片的描述-->
       <figure>
         <img class="avatar" alt="userPhoto" src="./src/defaultAvtar.png" />
         <p class="hello">Hello,</p>
@@ -23,8 +24,11 @@
       <hr />
     </header>
     <main>
+      <!--      // TODO feedback:建议用section-->
       <div>
+        <!--        // TODO feedback:h*更合适？-->
         <span class="about-me">ABOUT ME</span>
+        <!--        // TODO feedback:id不需要BEM的命名-->
         <p class="describe" id="about-me__describe"></p>
       </div>
       <div>

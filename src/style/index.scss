@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+// TODO feedback: 建议按照内容结构划分去提取样式到不同的文件，如_educations.scss, _userInfo.scss
 .content {
   width: 80%;
   background-color: $white;
